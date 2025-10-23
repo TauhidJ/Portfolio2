@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauhid Jafri | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Tauhid Jafri</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Tauhid Jafri</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Tauhid Jafri profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Tauhid Jafri</h1>
+        <p class="section__text__p2">.NET Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('./assets/Tauhid Resume Updated-1-1.pdf')">
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/tauhid-h-761618130?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/TauhidJ'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+              <h3>Experience</h3>
+              <p>3+ Years<br />Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img src="./assets/education.png" alt="Education icon" class="icon" />
+              <h3>Education</h3>
+              <p>Bachelor of Engineering<br />Electrical & Electronics</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a passionate and detail-oriented .NET Developer with over 3 years of experience in backend
+              development, working extensively with C#, ASP.NET Core, MVC, and Web APIs. I have contributed to
+              multiple large-scale projects involving microservices, Docker, Kubernetes, and Microsoft SQL.
+              My goal is to leverage technology to create scalable and efficient applications while continuously
+              learning and growing as a software professional.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C# / ASP.NET Core</h3><p>Advanced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Web API / MVC</h3><p>Advanced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL Server</h3><p>Experienced</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Docker & Kubernetes</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p>Intermediate</p></div></article>
+              <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Angular</h3><p>Basic</p></div></article>
+            </div>
+          </div>
+
+          <div class="details-container">
+            <h2 class="experience-sub-title">Work Experience</h2>
+            <div class="article-container">
+              <div>
+                <h3>Software Engineer – Asar Green Kabadi Pvt Ltd</h3>
+                <p><strong>June 2023 – Present | Bhopal</strong><br />
+                  • Developed .NET Core Web APIs and microservices using C#, Docker, and Kubernetes.<br />
+                  • Worked with Microsoft SQL Server and implemented RESTful APIs for internal and client apps.
+                </p>
+                  <br/>
+              <!--</div>-->
+              <!--<div>-->
+                <h3>Dotnet Developer – Shreejee Infosolution</h3>
+                <p><strong>Feb 2023 – June 2023 | Indore</strong><br />
+                  • Worked extensively on MVC and Web APIs using C# for CRM solutions (SellXpert).<br />
+                  • Collaborated with frontend and backend teams for deployment and maintenance.
+                </p>
+              <!--</div>-->
+              <!--<div>--><br/>
+                <h3>Dotnet Developer – MoreYeahs</h3>
+                <p><strong>Jan 2022 – Feb 2023 | Indore</strong><br />
+                  • Developed APIs for the Digisparsh healthcare platform.<br />
+                  • Worked with ASP.NET, C#, and Angular to enhance performance and user experience.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Scrapr Project" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Scrapr / The Kabadiwala</h2>
+            <p>
+              Developed Web APIs for the Scrapr and Partner apps using .NET Core 6.  
+              Built the Admin Portal for customer support operations.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/TauhidJ'">Github</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Deposit Refund Scheme" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Deposit Refund Scheme</h2>
+            <p>
+              Designed and developed APIs to improve efficiency in waste management and recycling processes.
+              Created support panel features to manage the DRS system.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/TauhidJ'">Github</button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="SellXpert / Digisparsh" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">SellXpert & Digisparsh</h2>
+            <p>
+              CRM and Healthcare projects for real estate and medical loan platforms.  
+              Implemented backend logic and integrated with Angular-based web frontends.
+            </p>
+            <div class="btn-container">
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/TauhidJ'">Github</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:tauhidjafri21@gmail.com">tauhidjafri21@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/phone.png" alt="Phone icon" class="icon contact-icon" />
+          <p><a href="tel:+917000130796">+91 7000130796</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/tauhid-h-761618130">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Tauhid Jafri. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
